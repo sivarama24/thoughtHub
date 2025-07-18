@@ -1,0 +1,849 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+/* NavBar Styling */
+.nav_bar {
+  background-color: rgba(42, 69, 245, 0.81);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav_links {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav_login .login{
+  background-color: #4a90e2;       /* Soft blue */
+  color: white;                    /* White text */
+  padding: 12px 24px;              /* Spacious padding */
+  border: none;                    /* No border */
+  border-radius: 8px;              /* Rounded corners */
+  font-size: 1.5rem;                 /* Readable text */
+  font-weight: 600;                /* Semi-bold */
+  cursor: pointer;                 /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav_links li a:hover {
+  color: #fff700;
+}
+
+.nav_login .login:hover {
+    background-color: white;
+    color: #4a90e2;
+}
+
+.nav_bar {
+  background-color: rgba(42, 69, 245, 0.81);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.nav_items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 0.3rem;
+  width: 2rem;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+
+
+.hero {
+  color: black;
+  height: max-content;
+  padding: 7rem;
+  text-align: center;
+}
+
+.hero h1 {
+    font-size: 6rem;    
+}
+
+.hero p {
+    padding: 1.6rem;
+    font-size: 1.8rem;
+}
+
+.home-buttons {
+  margin-top: 1.5rem;
+}
+
+.home-buttons a {
+    text-decoration: none;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 0.8rem 1.7rem;
+  margin: 0.5rem;
+  margin-right: 2.8rem;
+  border-radius: 5rem;
+  border: 2px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.btn-secondary {
+  background-color: whitesmoke;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  margin-right: 2.8rem;
+  border-radius: 5rem;
+  border: 2px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn:active {
+  background-color: black;
+  color: white;
+}
+
+.btn-secondary:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-secondary:active {
+    background-color: white;
+    color: black;
+}
+
+.why-join {
+  padding: 5rem;
+  text-align: center;
+}
+
+.why-join h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.why-join ul {
+  list-style: none;
+  padding: 3rem 4rem;
+}
+
+.why-join li {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.latest-preview {
+  padding: 5rem;
+  background-color: #e9f5ff;
+}
+
+.latest-preview h2 {
+    color: black;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.high-container {
+    display: flex;
+    gap: 7rem;
+}
+
+.high-container h2 {
+    margin-top: 9rem;
+    margin-left: 5rem;
+}
+
+.highlight-cards {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-left: 5px solid #007bff;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.card h3 {
+    color: black;
+    font-size: 2rem;
+}
+
+.card p {
+    color: black;
+    font-size: 1rem;
+}
+
+.get-started {
+  padding: 2rem;
+  text-align: center;
+}
+
+.get-started h2 {
+  color: black;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+footer .social_icon li a {
+  font-size: 2em;
+  color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social_icon li a:hover {
+  transform: translateY(-15px);
+  color: blue;
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+p {
+  color: whtie;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.copyright {
+  color: white;
+}
+
+.community-section h1,h2 {
+  color: black;
+}
+
+.post-card {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#postContent {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  overflow: hidden;
+  resize: none;
+  transition: height 0.2s ease, border-color 0.2s ease;
+}
+
+#postContent:focus {
+  outline: none;
+  border-color: #0077ff;
+  background-color: #fff;
+}
+
+.about {
+  background-color: #eaf4fc;
+  padding: 3rem;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.8;
+  max-width: 80vw;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.about h1 {
+  text-align: center;
+  color: black;
+}
+
+.about p, .about ul {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.about blockquote {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  border-left: 4px solid #004080;
+  padding-left: 1rem;
+}
+
+.about h3 {
+  color: black;
+}
+
+
+
+/* 🌐 Tablets and smaller screens */
+@media (max-width: 1024px) {
+
+    .hamburger {
+    display: flex;
+    order: 2;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.7rem;
+  }
+
+  .nav_items {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    background: rgba(42, 69, 245, 0.95);
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .nav_items.show {
+    display: flex;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav_login {
+    text-align: center;
+  }
+
+  .nav_bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-join {
+    padding: 1.5rem;
+  }
+
+  .why-join h2 {
+    font-size: 1.75rem;
+  }
+
+  .why-join li {
+    font-size: 1.1rem;
+  }
+
+
+  .high-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-cards {
+    align-items: center;
+  }
+
+.compose-post {
+  padding: 4rem 2rem;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.compose-post h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.compose-post form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.compose-post input[type="text"] {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.compose-post input[type="text"]:focus {
+  border-color: #2a45f5;
+  outline: none;
+}
+
+.compose-post button {
+  background-color: #2a45f5;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.compose-post button:hover {
+  background-color: #1c30c9;
+}
+
+
+.community-section {
+  padding: 40px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.post-card {
+  background-color: white;
+  padding: 20px;
+  border-left: 5px solid #007BFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.post-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.post-author {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.post-content {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+  .about {
+    padding: 2.5rem;
+    max-width: 85vw;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about p,
+  .about ul {
+    font-size: 1.05rem;
+  }
+
+  .about blockquote {
+    font-size: 1.05rem;
+    padding-left: 1rem;
+    border-left-width: 4px;
+  }
+
+  .about h3 {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* 📱 Mobile phones */
+@media (max-width: 768px) {
+  .hamburger {
+    top: 1.2rem;
+    right: 1rem;
+  }
+
+    .hero {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .home-buttons a {
+    width: 100%;
+    max-width: 250px;
+    font-size: 1rem;
+  }
+
+  .high-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .compose-post h1 {
+    font-size: 2rem;
+  }
+
+  .compose-post input[type="text"] {
+    font-size: 1rem;
+  }
+
+  .compose-post button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .post-author {
+    font-size: 1.5rem;
+  }
+
+  .post-title {
+    font-size: 1.2rem;
+  }
+
+  .post-content {
+    font-size: 0.95rem;
+  }
+
+  .about h1 {
+    font-size: 1.8rem;
+  }
+
+  .about p,
+  .about ul,
+  .about blockquote {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .nav_bar {
+    height: 3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hamburger {
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  .nav_items {
+    width: 100vw;
+  }
+
+  .logo a {
+    font-size: 1.5rem ;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .why-join h2 {
+    font-size: 1.5rem;
+  }
+
+  .why-join li {
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .home-buttons a, .get-started .btn {
+    font-size: 0.95rem;
+    margin-left: 2rem;
+  }
+  .btn-secondary {
+    margin-top: 0 !important;
+  }
+
+  .hero img, .hero svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero {
+    margin-bottom: 1rem !important;
+    height: max-content;
+  }
+
+
+  .latest-preview {
+    margin-top: 0 !important;
+    padding-top: 1rem !important;
+  }
+
+  /* Fix spacing around the heading */
+  .highlights {
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .highlights h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  /* Optional: Add spacing between heading and cards */
+  .highlight-cards {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-left: 1rem solid #0066cc;
+    width: 75vw;
+    border-radius: 8px;
+  }
+  
+  .get-started h2 {
+    font-size: 1.5rem;
+  }
+  
+  .get-started p {
+    font-size: 0.95rem;
+    color: black;
+  }
+
+  .highlight-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .highlight-cards .card {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .highlight-cards .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .highlight-cards .card p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .highlight-cards .card a {
+    font-size: 0.95rem;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+  
+
+  .compose-post {
+    padding: 2rem 1rem;
+  }
+
+  .compose-post h1 {
+    font-size: 1.6rem;
+  }
+
+  .compose-post input[type="text"] {
+    font-size: 0.95rem;
+  }
+
+  .compose-post button {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .post-author {
+    font-size: 1.3rem;
+  }
+
+  .post-title {
+    font-size: 1.05rem;
+  }
+
+  .post-content {
+    font-size: 0.9rem;
+  }
+
+  .about {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .about h1 {
+    font-size: 1.6rem;
+  }
+
+  .about p,
+  .about ul,
+  .about blockquote {
+    font-size: 0.95rem;
+  }
+}
+

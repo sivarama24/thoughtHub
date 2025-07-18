@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<section class="community-section">
+    <h1>Community Posts</h1>
+    
+    <% if (posts.length === 0) { %>
+        <h2>There are no Posts are available at Community as of now!</h2>
+    <% } else { %>
+        <% posts.forEach( (post) => { %>
+            <div class="post-card">
+                <h2 class="post-author">@<%= post.name %> </h2>
+                <p class="post-title"> <%= post.title %> </p>
+                <p class="post-content"> <%= post.content %> </p>
+            </div>
+            <br>
+        <% }); %>
+    <% } %>
+</section>

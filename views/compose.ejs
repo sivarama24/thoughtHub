@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<section class="compose-post">
+    <h1>Share your knowledge, tell your story,
+         or drop a quick coding gem — ThoughtHub is listening.</h1>
+
+    <form action="/compose" method="post">
+        <input type="text" name="postTitle" placeholder="Enter the Post Title..." required>
+        <input type="text" name="authorName" placeholder="Enter Your name..." required>
+        <textarea name="postContent" id="postContent" placeholder="Write your thoughts!!!" rows="6" required></textarea>
+        <button type="submit" class=".btn">Submit</button>
+    </form>
+</section>
+
+<%- include("partials/footer.ejs") %>

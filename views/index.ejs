@@ -1,0 +1,47 @@
+<%- include("partials/header.ejs") %>
+
+<section class="hero">
+  <h1>Welcome to thoughtHub</h1>
+  <p>Your space to share thoughts, read snippets, and grow together as developers.</p>
+  <div class="home-buttons">
+    <a href="/compose" class="btn">Write a Blog</a>
+    <a href="/snippets" class="btn-secondary">View Snippets</a>
+  </div>
+</section>
+
+
+<section class="why-join">
+  <h2>Why Join the Community?</h2>
+  <ul>
+    <li>💡 Share your technical insights and stories</li>
+    <li>👀 Read short, valuable snippets from fellow devs</li>
+    <li>📢 Learn and grow with a developer-first platform</li>
+    <li>🤝 Connect with like-minded tech enthusiasts</li>
+  </ul>
+</section>
+
+<section class="latest-preview">
+  <div class="high-container">
+    <div class="highlights"><h2>Recent Highlights</h2></div>
+    <div class="highlight-cards">
+        <div class="card">
+            <h3>JS Closures Simplified</h3>
+            <p>A quick peek into closures and how they power scopes in JS.</p>
+            <a href="/post/js-closures">Read More</a>
+        </div>
+        <div class="card">
+            <h3>Deploying with Vercel</h3>
+            <p>Deploy your Node.js app in minutes. Fast, free, and easy.</p>
+            <a href="/post/deploy-vercel">Read More</a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="get-started">
+  <h2>Ready to Contribute?</h2>
+  <p>Click below to start writing your thoughts. Whether it's a guide, a tip, or a rant — your voice matters.</p>
+  <a href="/compose" class="btn">Start Writing</a>
+</section>
+
+<%- include("partials/footer.ejs") %>
