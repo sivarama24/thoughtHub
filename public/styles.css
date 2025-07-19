@@ -262,6 +262,7 @@ footer {
   position: relative;
   width: 100%;
   background: #3586ff;
+  bottom: 0;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -323,12 +324,108 @@ p {
 
 .community-section h1,h2 {
   color: black;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.no-post-h2 {
+  position: relative;
+  text-align: center;
+  top: 31dvh;
+}
+
+.post-card {
+  background-color: #ccc;
+  padding: 1rem;
+  margin: 0.5rem 1.5rem;
+  border-left: 5px solid #007BFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.post-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.post-author {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #333;
+  text-align: left;
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.post-content {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
 }
 
 .post-card {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+
+.compose-post {
+  padding: 4rem 2rem;
+  max-width: 700px;
+  max-height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.compose-post-h1 {
+  font-size: 2.9rem;
+  color: black;
+  margin: 2.7rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: fit-content;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.compose-post form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.compose-post input[type="text"] {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.compose-post input[type="text"]:focus {
+  border-color: #2a45f5;
+  outline: none;
+}
+
+.compose-post button {
+  background-color: #2a45f5;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.compose-post button:hover {
+  background-color: #1c30c9;
+}
+
 
 #postContent {
   width: 100%;
@@ -535,7 +632,7 @@ p {
 }
 
 .post-card {
-  background-color: white;
+  background-color: #ccc;
   padding: 20px;
   border-left: 5px solid #007BFF;
   border-radius: 10px;
@@ -546,7 +643,7 @@ p {
 .post-title {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #555;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -588,9 +685,20 @@ p {
   }
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+}
+
 
 /* 📱 Mobile phones */
 @media (max-width: 768px) {
+
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+
   .hamburger {
     top: 1.2rem;
     right: 1rem;
@@ -629,8 +737,10 @@ p {
     gap: 1rem;
   }
 
-  .compose-post h1 {
-    font-size: 2rem;
+  .compose-post-h1 {
+    font-size: 1.6rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
   }
 
   .compose-post input[type="text"] {
@@ -640,6 +750,14 @@ p {
   .compose-post button {
     font-size: 1rem;
     padding: 0.8rem 1.5rem;
+  }
+
+  .post-card {
+    background-color: #ccc;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .post-author {
