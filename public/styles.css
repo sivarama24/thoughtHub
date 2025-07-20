@@ -89,6 +89,7 @@ body {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  z-index: 1000;
   gap: 5px;
 }
 
@@ -515,6 +516,10 @@ p {
     margin: 0;
   }
 
+  .nav_links li {
+    text-align: center;
+  }
+
   .nav_login {
     text-align: center;
   }
@@ -704,6 +709,16 @@ footer {
     right: 1rem;
   }
 
+  .nav_items {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 20%;
+    width: 80vw;
+    height: 100vh;
+    background-color: transparent 2rem rgba(42, 69, 245, 0.81);
+  }
+
     .hero {
     padding: 2rem 1rem;
     text-align: center;
@@ -796,9 +811,7 @@ footer {
     font-size: 1.5rem;
   }
 
-  .nav_items {
-    width: 100vw;
-  }
+  
 
   .logo a {
     font-size: 1.5rem ;
